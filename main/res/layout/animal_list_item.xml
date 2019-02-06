@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="@dimen/padd_10">
+
+        <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="@dimen/thumbnail"
+                android:layout_height="@dimen/thumbnail"
+                android:layout_marginRight="@dimen/activity_padding_horizontal"
+                android:scaleType="centerCrop" />
+
+        <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/thumbnail"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:textColor="@color/animal_name"
+                android:textSize="17dp" />
+
+        <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/thumbnail"
+                android:textColor="@color/animal_age"
+                android:textSize="12dp" />
+
+        <TextView
+                android:id="@+id/mother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gender"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/thumbnail"
+                android:textColor="@color/animal_age"
+                android:textSize="12dp" />
+
+        <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mother"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/thumbnail"
+                android:textColor="@color/animal_gender"
+                android:textStyle="bold" />
+
+    </RelativeLayout>
+
